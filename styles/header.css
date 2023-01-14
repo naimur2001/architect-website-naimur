@@ -1,0 +1,41 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Work Sans';
+}
+/* header css */
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 100px;
+}
+.nav a{
+text-decoration: none;
+margin: 0 10px;
+font-weight: 600;
+font-size: 18px;
+color: #424242;
+}
+
+
+/* header css end */
+@media screen and (max-width:576px) {
+  .header-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 30px 0;
+  }
+  .header-tit h2{
+   margin-top: 15px;
+  }
+  .nav {
+     display: flex;
+     flex-direction: column;
+     row-gap: 10px;
+     margin-top: 30px;
+    }
+    
+}

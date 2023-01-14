@@ -1,0 +1,288 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Work Sans';
+}
+.bg-color{
+  background: rgba(255, 144, 14, 0.1);
+  width: 100%;
+}
+/* css variable */
+:root{
+ --c:#727272;
+ --bt: #FF900E;
+ --t:#131313;
+}
+/* anchor */
+a{
+  text-decoration: none;
+}
+/* section */
+section{
+  margin: 120px 0;
+}
+/* 1st section css */
+.fs-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 100px;
+
+}
+.fs-container h3{
+  font-weight: bold;
+font-size: 40px;
+color: var(--t);
+
+}
+.fs-container .fs-tit{
+  margin-bottom: 25px;
+}
+.fs-container p{
+  font-weight: 500;
+font-size: 16px;
+line-height: 26px;
+color: var(--c);
+padding: 0 100px;
+}
+.fs-container a{
+  margin-top: 25px;
+  background-color: var(--bt);
+padding: 10px 15px;
+color:#ffffff;
+font-weight: 600;
+font-size: 14px;
+border-radius: 4px;
+}
+/* 1st section css end */
+
+/* 2nd section start */
+.ss-container{
+  padding: 0 100px 30px 100px;
+}
+.ss-img{
+  height: 560px;
+  background-image: url('../images/banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* 2nd section end */
+
+/* 3rd section start */
+.third-section{
+  padding: 0 100px;
+}
+.part1 img{
+  width: 300px;
+height: 300px;
+}
+.parts{
+  display: flex;
+  gap: 50px;
+}
+.part1{
+  display: grid;
+  grid-template-columns: repeat(2,1fr) ;
+  grid-column-gap:20px ;
+  grid-row-gap:25px ;
+
+}
+.part2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 15px;
+}
+.part2 h3{
+  color: var(--c);
+  font-size:40px ;
+}
+.part2 .one{
+  color: #131313;
+}
+.part2 .two{
+  color: var(--bt);
+}
+.part2 p{
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--c);
+}
+.part2 a{
+  width: 90px;
+  margin-top: 25px;
+  background-color: var(--bt);
+padding: 10px 15px;
+color:#ffffff;
+font-weight: 600;
+font-size: 14px;
+border-radius: 4px;
+}
+/* 3rd section end */
+/* 4th section start */
+.fourth-section{
+  padding: 0 90px;
+}
+.fourth-section .features  h3{
+  font-weight: bold;
+  font-size: 40px;
+  color: #131313;
+  padding-right: 750px;
+}
+.features{
+  margin-bottom: 30px;
+}
+.fourth-section .features p{
+  margin-top: 20px;
+  font-weight: 400;
+font-size: 16px;
+color: var(--c);
+padding-right: 500px;
+}
+.fourth-section .features .line1{
+  height: 100px;
+  width: 4px;
+  background-color: var(--bt);
+  position: absolute;
+  bottom: -1545;
+  left: 75;
+}
+.fos-parts{
+  display: flex;
+  gap: 60px;
+}
+.fos-part1 .des{
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.10);
+border-radius: 8px;
+height: 110px;
+width: 500px;
+padding: 10px 0 10px 10px;
+}
+.fos-part1 h3{
+  font-weight: 600;
+  font-size: 18px;
+  color: #131313;
+}
+.fos-part1 p{
+  font-weight: 400;
+font-size: 16px;
+line-height: 16px;
+color: #727272;
+
+margin: 10px 0;
+}
+.fos-part2 img{
+  width: 500px;
+height: 560px;
+}
+.experience{
+  width: 160px;
+  height: 100px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+background-color:#FF900E;
+border-radius: 8px;
+color: #ffffff;
+position: absolute;
+bottom: -2250;
+right: 550;
+}
+.experience h3{
+  font-weight: bold;
+  font-size: 30px;
+
+}
+.experience span{
+  font-size: 14px;
+  font-weight: bold;
+}
+/* 4th section end */
+
+
+
+/* Responsive */
+@media screen and (max-width:576px){
+ .bg-color{
+  margin-top: -30px;
+ }
+  .fs-container{
+    padding: 0;
+  
+  }
+
+  .fs-container p{
+    padding: 0 20px;
+   
+  }
+  .ss-container{
+    padding: 0 20px 30px 20px;
+  }
+  .ss-img{
+  background-size: cover;
+    height: 200px;
+
+  }
+  .third-section{
+    padding: 0 50px;
+  }
+  .parts{
+    flex-direction: column;
+  }
+  .part1{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .part2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fourth-section{
+    padding: 0 10px;
+  }
+
+  .fourth-section .features  h3{
+    font-weight: bold;
+    font-size: 40px;
+    color: #131313;
+    padding-right: 10px;
+  }
+ 
+  .fourth-section .features p{
+  
+  padding-right:15px;
+  }
+
+  .fos-part2 img{
+    width: 100%;
+  height: 560px;
+  }
+  .fos-part1 .des{
+
+  height: 110px;
+  width: 100%;
+  padding: 3px 0 10px 3px;
+  }
+  .fourth-section .features .line1{
+    display: none;
+  }
+  .fos-parts{
+   flex-direction: column-reverse;
+  }
+  .fourth-section .features .line2{
+    height: 4px;
+    width: 70%;
+    background-color:var(--bt);
+    position: absolute;
+    bottom: -2060;
+    /* left: 35; */
+  }
+
+  .experience{
+
+   bottom: -3410;
+   right: 120;
+  }
+}
