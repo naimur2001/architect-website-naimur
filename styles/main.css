@@ -199,6 +199,9 @@ right: 550;
   font-size: 14px;
   font-weight: bold;
 }
+.experience1{
+  z-index: -10;
+}
 /* 4th section css end */
 /* 5th section css start */
 .fif-section{
@@ -287,8 +290,26 @@ border-radius: 50%;
   justify-content: center;
   align-items: center;
   gap: 25px;
-  
+ 
 }
+
+/* animation */
+@keyframes sliding2 {
+  20%{
+    position: relative;
+    left: 0;
+  }
+
+}
+@keyframes sliding1 {
+  20%{
+    position: relative;
+
+    right:0 ;
+  }
+
+}
+/* animation */
 .rect-des{
  
   height: 100px;
@@ -303,9 +324,15 @@ border-radius: 50%;
   font-weight: 600;
   
 }
+.rect1{
+  position: relative;
+  right: 120;
+  animation: sliding1 5s ease .5s infinite alternate ;
+}
 .rect2{
   position: relative;
   left: 120;
+  animation: sliding2 3s  ease-in-out 5s infinite alternate ;
 }
 /* 7th section css end */
 
@@ -506,5 +533,41 @@ padding: 5 10px;
    row-gap: 10px;
    gap: 10px;
   }
+  /* animation */
+@keyframes sliding2 {
+  20%{
+    position: relative;
+    left: 40;
+  }
+
+}
+.experience{
+  display: none;
+}
+
+.experience1{
+  z-index: 50;
+  width: 160px;
+  height: 100px;
+ display: flex;
+ flex-direction: column;
+ 
+background-color:#FF900E;
+border-radius: 8px;
+color: #ffffff;
+align-items: center;
+justify-content: center;
+margin-left: 100px;
+}
+.experience1 h3{
+  font-weight: bold;
+  font-size: 30px;
+
+}
+.experience1 span{
+  font-size: 14px;
+  font-weight: bold;
+}
+
 }
 
